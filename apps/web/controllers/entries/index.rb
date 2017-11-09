@@ -13,7 +13,6 @@ module Web::Controllers::Entries
       
       #most_recent or least_recent
       if @sort == 'most_recent'
-        @sort == 'most_recent'
         @entries == EntryRepository.new.most_recent
       else
         @entries == EntryRepository.new.least_recent  
